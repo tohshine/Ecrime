@@ -37,7 +37,7 @@ function App() {
 
           <Route path='/getstarted' exact component={New} />
 
-          <Route path='/' exact>
+          <Route path='/'exact>
             <LandingPage />
           </Route>
         </Switch>
