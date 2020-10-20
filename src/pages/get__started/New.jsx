@@ -7,8 +7,8 @@ const New = () => {
   return (
     <div className='flex flex-col justify-center items-center text-gray-500  w-full  '>
       <div className=' max-w-6xl w-full'>
-        <div className='grid-2'>
-          <div className=' max-w-2xl  bg-white w-full   shadow-2xl p-12 '>
+        <div className='grid-2 sm:mt-10'>
+          <div className='  bg-white w-full   shadow-2xl p-12 '>
             <Link
               to='/'
               className='border border-orange-400 p  px-4 rounded-lg hover:bg-orange-400 hover:text-white'
