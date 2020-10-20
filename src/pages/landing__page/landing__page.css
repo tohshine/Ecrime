@@ -1,0 +1,18 @@
+header{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.87)), url('https://res.cloudinary.com/dlecos9op/image/upload/f_auto,fl_lossy,q_auto/v1603168747/fi17g9y5tjyvabzrzzfr.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+   
+   
+}
+
+.child__space{
+    margin-bottom: 10px;
+
+}
+
+.content__margin{
+    margin-bottom: 100px;
+}
