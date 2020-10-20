@@ -19,7 +19,7 @@ const New = () => {
             <h1 className='my-6 text-4xl text-black font-bold'>Basic Setup</h1>
             <p className='text-gray-500'>
               Setup account with ogun state crime unit any credentials sent
-              us is been used for further follow up to making ogun state a
+              us is been used for further     up to making ogun state a
               better place to live.
             </p>
 

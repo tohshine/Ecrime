@@ -38,7 +38,6 @@ function App() {
           <Route path='/getstarted' exact component={New} />
 
           <Route path='/' exact>
-            <Header />
             <LandingPage />
           </Route>
         </Switch>
