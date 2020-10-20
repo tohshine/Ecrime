@@ -7,7 +7,8 @@ const New = () => {
   return (
     <div className='flex flex-col justify-center items-center text-gray-500  w-full  '>
       <div className=' max-w-6xl w-full'>
-        <div className='grid-2 sm:mt-10'>
+        
+        <div className=''>
           <div className='  bg-white w-full   shadow-2xl p-12 '>
             <Link
               to='/'
@@ -16,7 +17,7 @@ const New = () => {
               &larr; Go back home
             </Link>
 
-            <h1 className='my-6 text-4xl text-black font-bold'>User information</h1>
+            <h1 className='my-6 text-2xl sm:text-4xl text-black font-bold'>User information</h1>
             <p className='text-gray-500'>
               Setup account with ogun state crime unit any credentials sent
               us is been used for further     up to making ogun state a
@@ -72,8 +73,8 @@ const New = () => {
           </div>
 
           {/* crime report form */}
-          <div className=' max-w-2xl  bg-white w-full   shadow-2xl p-12 '>
-            <h1 className='my-6 text-4xl text-black font-bold'>Report crime</h1>
+          <div className=' bg-white w-full shadow-2xl p-12 '>
+            <h1 className='my-6 text-2xl sm:text-4xl text-black font-bold'>Report crime</h1>
             <p className='text-gray-500'></p>
 
             <form className='my-6 form-group'>
@@ -125,7 +126,7 @@ const New = () => {
               <input
                 type='file'
                 name='video'
-                className=' p-2 border-gray bg-white '
+                className=' py-2 bg-white  '
               />
                
               <label htmlFor='' className="inline-block">

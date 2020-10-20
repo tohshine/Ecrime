@@ -11,7 +11,7 @@ const landing__page = () => {
           alt='ogun state logo'
           className='child__space content__margin w-32 object-cover'
         />
-        <h1 className=' text-xl sm:text-6xl '>Welcome to Ogun state</h1>
+        <h1 className=' text-xl sm:text-6xl '>Welcome to Ogun State</h1>
         <h2 className='font-extrabold  text-lg sm:text-3xl content__margin '>
           HRCP
         </h2>
