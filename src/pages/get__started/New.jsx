@@ -97,7 +97,7 @@ const New = () => {
               />
 
               <label htmlFor=''>
-                Phone number <span className='text-red-500'>&lowast;</span>
+                Mobile number 1 <span className='text-red-500'>&lowast;</span>
               </label>
               <input
                 style={{ outline: 0 }}
@@ -107,7 +107,7 @@ const New = () => {
                 className=' p-2 border-gray bg-white '
               />
 
-              <label htmlFor=''>mobile number 2 (optional)</label>
+              <label htmlFor=''>Mobile number 2 (optional)</label>
               <input
                 style={{ outline: 0 }}
                 onChange={onChange}
