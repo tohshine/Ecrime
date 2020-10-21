@@ -8,8 +8,8 @@ const New = () => {
     <div className='flex flex-col justify-center items-center text-gray-500  w-full  '>
       <div className=' max-w-6xl w-full'>
         
-        <div className=''>
-          <div className='  bg-white w-full   shadow-2xl p-12 '>
+        <div className='grid-2'>
+          <div className='  bg-white w-full   shadow-2xl p-8 '>
             <Link
               to='/'
               className='border border-orange-400 p  px-4 rounded-lg hover:bg-orange-400 hover:text-white'
@@ -73,7 +73,7 @@ const New = () => {
           </div>
 
           {/* crime report form */}
-          <div className=' bg-white w-full shadow-2xl p-12 '>
+          <div className=' bg-white w-full shadow-2xl p-8'>
             <h1 className='my-6 text-2xl sm:text-4xl text-black font-bold'>Report crime</h1>
             <p className='text-gray-500'></p>
 
