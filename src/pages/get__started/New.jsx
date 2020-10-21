@@ -6,7 +6,7 @@ const New = () => {
 
   return (
     <div className='flex flex-col justify-center items-center text-gray-500  w-full  '>
-      <div className=' max-w-6xl w-full'>
+      <div className=' max-w-6xl w-full sm:mt-12'>
         
         <div className='grid-2'>
           <div className='  bg-white w-full   shadow-2xl p-8 '>
