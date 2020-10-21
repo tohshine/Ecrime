@@ -75,7 +75,7 @@ const New = () => {
 
             <form className='my-6 form-group'>
               <label htmlFor=''>
-                Full name <span className='text-red-500'>&lowast;</span>
+                Full Name <span className='text-red-500'>&lowast;</span>
               </label>
               <input
                 style={{ outline: 0 }}
@@ -97,7 +97,7 @@ const New = () => {
               />
 
               <label htmlFor=''>
-                Mobile number 1 <span className='text-red-500'>&lowast;</span>
+                Mobile Number 1 <span className='text-red-500'>&lowast;</span>
               </label>
               <input
                 style={{ outline: 0 }}
@@ -107,7 +107,7 @@ const New = () => {
                 className=' p-2 border-gray bg-white '
               />
 
-              <label htmlFor=''>Mobile number 2 (optional)</label>
+              <label htmlFor=''>Mobile Number 2 (optional)</label>
               <input
                 style={{ outline: 0 }}
                 onChange={onChange}
@@ -138,7 +138,7 @@ const New = () => {
 
             <form className='my-6 form-group'>
               <label htmlFor=''>
-                Crime type <span className='text-red-500'>&lowast;</span>
+                Crime Type <span className='text-red-500'>&lowast;</span>
               </label>
               <select name='crimeType' className='bg-white outline-none'>
                 <option value='crime type' disabled selected>
