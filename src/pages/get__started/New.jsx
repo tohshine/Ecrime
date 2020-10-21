@@ -64,7 +64,7 @@ const New = () => {
             </Link>
 
             <h1 className='my-6 text-2xl sm:text-4xl text-black font-bold'>
-              User information
+              User Information
             </h1>
             <p className='text-gray-500 text-sm'>
               Setup an account with the <span className="text-orange-500">Ogun State Crime Unit</span>. The information
@@ -132,7 +132,7 @@ const New = () => {
           {/* crime report form */}
           <div className=' bg-white w-full shadow-2xl p-8'>
             <h1 className='my-6 text-2xl sm:text-4xl text-black font-bold'>
-              Report crime
+              Report Crime
             </h1>
             <p className='text-gray-500'></p>
 
