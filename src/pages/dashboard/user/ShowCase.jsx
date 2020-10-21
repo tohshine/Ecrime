@@ -111,7 +111,7 @@ const ShowCase = () => {
                           })}
                           <Link
                             to={`/dashboard/crime/${row.id}`}
-                            className='bg-green-400 p rounded-lg text-white'
+                            className='bg-green-400 p rounded-lg mt-8 text-white'
                           >
                             view
                           </Link>

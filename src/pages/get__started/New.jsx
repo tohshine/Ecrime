@@ -1,13 +1,59 @@
-import React from "react";
-import {Link} from 'react-router-dom'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const New = () => {
   const now = new Date();
+  const [input, setinput] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    mobileNumber: "",
+    address: "",
+    crimeType: "",
+    date: "",
+    location: "",
+    file: "",
+    description: "",
+  });
+
+  const onChange = (e) => {
+    e.preventDefault();
+    const {
+      fullName,
+      email,
+      phoneNumber,
+      mobileNumber,
+      address,
+      crimeType,
+      date,
+      location,
+      file,
+      description,
+    } = input;
+
+    if (
+      fullName === "" &&
+      email === "" &&
+      phoneNumber === "" &&
+      address === "" &&
+      crimeType === "" &&
+      date === "" &&
+      location === "" &&
+      file === "" &&
+      description === ""
+    )
+      return;
+
+    //start upload
+  };
+
+  const SubmitRequest = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <div className='flex flex-col justify-center items-center text-gray-500  w-full  '>
       <div className=' max-w-6xl w-full sm:mt-12'>
-        
         <div className='grid-2'>
           <div className='  bg-white w-full   shadow-2xl p-8 '>
             <Link
@@ -17,20 +63,25 @@ const New = () => {
               &larr; Go back home
             </Link>
 
-            <h1 className='my-6 text-2xl sm:text-4xl text-black font-bold'>User information</h1>
-            <p className='text-gray-500'>
-              Setup account with ogun state crime unit any credentials sent
-              us is been used for further     up to making ogun state a
-              better place to live.
+            <h1 className='my-6 text-2xl sm:text-4xl text-black font-bold'>
+              User information
+            </h1>
+            <p className='text-gray-500 text-sm'>
+              Setup an account with the <span className="text-orange-500">Ogun State Crime Unit</span>. The information
+              captured in these form is been used to unveil arising crime
+              situation. Let us all collaboratively make Ogun State safe and
+              secured
             </p>
 
-            <form action='' method='post' className='my-6 form-group'>
+            <form className='my-6 form-group'>
               <label htmlFor=''>
                 Full name <span className='text-red-500'>&lowast;</span>
               </label>
               <input
+                style={{ outline: 0 }}
+                onChange={onChange}
                 type='text'
-                name='name'
+                name='fullName'
                 className=' p-2 border-gray bg-white '
               />
 
@@ -38,35 +89,41 @@ const New = () => {
                 Email <span className='text-red-500'>&lowast;</span>
               </label>
               <input
+                style={{ outline: 0 }}
+                onChange={onChange}
                 type='text'
                 name='email'
                 className=' p-2 border-gray bg-white '
               />
 
               <label htmlFor=''>
-                Phone number 1 <span className='text-red-500'>&lowast;</span>
+                Phone number <span className='text-red-500'>&lowast;</span>
               </label>
               <input
+                style={{ outline: 0 }}
+                onChange={onChange}
                 type='text'
-                name='phone1'
+                name='phoneNumber'
+                className=' p-2 border-gray bg-white '
+              />
+
+              <label htmlFor=''>mobile number 2 (optional)</label>
+              <input
+                style={{ outline: 0 }}
+                onChange={onChange}
+                type='text'
+                name='mobileNumber'
                 className=' p-2 border-gray bg-white '
               />
 
               <label htmlFor=''>
-                Phone number 2<span className='text-red-500'>&lowast;</span>
+                Address<span className='text-red-500'>&lowast;</span>
               </label>
               <input
+                style={{ outline: 0 }}
+                onChange={onChange}
                 type='text'
-                name='phone2'
-                className=' p-2 border-gray bg-white '
-              />
-
-              <label htmlFor=''>
-                street name <span className='text-red-500'>&lowast;</span>
-              </label>
-              <input
-                type='text'
-                name='name'
+                name='address'
                 className=' p-2 border-gray bg-white '
               />
             </form>
@@ -74,16 +131,18 @@ const New = () => {
 
           {/* crime report form */}
           <div className=' bg-white w-full shadow-2xl p-8'>
-            <h1 className='my-6 text-2xl sm:text-4xl text-black font-bold'>Report crime</h1>
+            <h1 className='my-6 text-2xl sm:text-4xl text-black font-bold'>
+              Report crime
+            </h1>
             <p className='text-gray-500'></p>
 
             <form className='my-6 form-group'>
               <label htmlFor=''>
                 Crime type <span className='text-red-500'>&lowast;</span>
               </label>
-              <select name='category' className='bg-white outline-none'>
+              <select name='crimeType' className='bg-white outline-none'>
                 <option value='crime type' disabled selected>
-                 select an option ...
+                  select an option ...
                 </option>
                 <option value='rape' id=''>
                   rape
@@ -103,10 +162,12 @@ const New = () => {
                 Date <span className='text-red-500'>&lowast;</span>
               </label>
               <input
+                style={{ outline: 0 }}
+                onChange={onChange}
                 disabled
                 value={now.toLocaleString()}
                 type='text'
-                name='name'
+                name='date'
                 className=' p-2 border-gray bg-white '
               />
 
@@ -114,8 +175,10 @@ const New = () => {
                 Location <span className='text-red-500'>&lowast;</span>
               </label>
               <input
+                style={{ outline: 0 }}
+                onChange={onChange}
                 type='text'
-                name='name'
+                name='location'
                 className=' p-2 border-gray bg-white '
               />
 
@@ -124,18 +187,22 @@ const New = () => {
                 <span className='text-red-500'>&lowast;</span>
               </label>
               <input
+                style={{ outline: 0 }}
+                onChange={onChange}
                 type='file'
-                name='video'
+                name='file'
                 className=' py-2 bg-white  '
               />
-               
-              <label htmlFor='' className="inline-block">
+
+              <label htmlFor='' className='inline-block'>
                 Full description of the crime{" "}
                 <span className='text-red-500'>&lowast;</span>
               </label>
               <textarea name='description'></textarea>
 
               <button
+                style={{ outline: 0 }}
+                onClick={SubmitRequest}
                 type='submit'
                 className='p btn-block  border border-orange-500 rounded-lg hover:bg-orange-500 my-6 hover:text-white'
               >
